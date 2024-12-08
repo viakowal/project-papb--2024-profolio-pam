@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit.EditOrganisasiActivity"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:background="@drawable/picture_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ExtraText"></View>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/bg_putih_title"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/tambah_page"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingHorizontal="55dp"
+            android:paddingVertical="7dp"
+            android:text="Edit Organisasi"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="45dp"
+            android:paddingVertical="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Nama Organisasi"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtNamaOrganisasi2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/bginputtask"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Name of your organization"
+                android:inputType="textCapWords"
+                android:paddingStart="10dp"
+                android:textColor="@color/subcaption"
+                android:textColorHint="@color/subcaption"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Deskripsi"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtDeskripsiOrganisasi2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/bginputtask"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top"
+                android:inputType="textCapSentences"
+                android:hint="Description about your organization"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/subcaption"
+                android:textColorHint="@color/subcaption"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Jabatan"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtJabatanOrganisasi2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/bginputtask"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Your position in organization"
+                android:paddingStart="10dp"
+                android:inputType="textCapWords"
+                android:textColor="@color/subcaption"
+                android:textColorHint="@color/subcaption"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Periode"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="13dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Mulai"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edtTahunMulaiOrganisasi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bginputtask"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="Start year"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/subcaption"
+                        android:paddingStart="10dp"
+                        android:textColorHint="@color/subcaption"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Selesai"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+
+                        android:id="@+id/edtTahunSelesaiOrganisasi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bginputtask"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="End year"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/subcaption"
+                        android:paddingStart="10dp"
+                        android:textColorHint="@color/subcaption"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Upload Sertifikat"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_Organisasi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_UploadSertif2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/bginputtask"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Upload Image"
+                android:textColorHint="@color/subcaption"
+                android:textSize="12sp"
+                android:layout_marginBottom="30dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEditOrganisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_back"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="Save Changes"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

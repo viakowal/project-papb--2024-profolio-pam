@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewPopUpSaveProfileSatu"
+        android:layout_width="356dp"
+        android:layout_height="214dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Sure you want to accept?"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="44dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="10sp"
+            android:text="Are you sure you want to accept this?"
+            android:textColor="#787575"
+            android:layout_marginTop="72dp"
+            android:layout_marginLeft="44dp"></TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_popup1_saveprofile"
+            android:layout_width="135dp"
+            android:layout_height="48dp"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="130dp">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_popup2_saveprofile"
+            android:layout_width="135dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_pop_up_2"
+            android:text="Confirm"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="180dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
